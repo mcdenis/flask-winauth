@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-winauth"
+description = "Windows Authentication for Flask"
+version = "1.0.0"
+dependencies = [
+    "pywin32"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pyright]
+typeCheckingMode = "off"
